@@ -1,0 +1,152 @@
+body{
+    margin: 1%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 0%;
+}
+#logo-img{
+    flex: 1 1 auto; /* Image takes up the remaining space */
+  object-fit: cover; /* Adjusts how the image fits in the space */
+  width: auto; /* Ensures the image width scales proportionally */
+  height: 100%; 
+}
+#logo a{
+    text-decoration: none;
+    color: red;
+}
+#company-name{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 150%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:30%;
+}
+#nav-links a {
+    text-decoration: none;
+    color: green;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.main-content img{
+    width: 100%;
+}
+.main-content{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin:10%;
+    gap: 2%;
+}
+.text-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about-text{
+    font-size: 110%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+#social-links{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+#social-links a{
+    color: white ;
+    text-decoration: none;
+    padding: 1%;
+}
+@media (max-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: whitesmoke;
+    }
+    #nav-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:80%;
+        padding: 1%;
+    }
+
+    .main-content{
+        display: grid;
+        grid-template-columns:1fr;
+        margin:10%;
+        gap: 2%;
+    }
+
+    #social-links{
+        display: flex;
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+}
+
+
+@media (max-width: 1024px ) and (min-width: 601px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: whitesmoke;
+    }
+    #nav-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:45%;
+        padding: 1%;
+    }
+
+    .main-content{
+        display: grid;
+        grid-template-columns:1fr;
+        margin:10%;
+        gap: 2%;
+    }
+
+    #social-links{
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2%;
+    
+    }
+}
+
